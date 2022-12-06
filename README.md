@@ -22,7 +22,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+PdscanRb::PiiScan.scan url_to_database, "--show-data --show-all --format ndjson"
+```
 
 ## Development
 
