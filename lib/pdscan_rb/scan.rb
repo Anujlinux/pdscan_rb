@@ -1,9 +1,8 @@
 module PdscanRb
   class PiiScan
     def self.scan url, options
-      p File.dirname(File.expand_path("pdscan"))
-      resp = `#{File.dirname(File.expand_path("pdscan"))}/lib/pdscan #{url} #{options}`
-      # Add all your parsing code below
+      x = `bundle show pdscan_rb`
+      resp = `#{x}/lib/pdscan #{url} #{options}`
       resp
     end
   end
